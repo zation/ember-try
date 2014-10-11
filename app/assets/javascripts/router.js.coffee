@@ -6,4 +6,6 @@ MyApp.Router.reopen
 
 MyApp.Router.map ()->
   @resource 'leads', path: '/'
+  @resource 'leads', path: '/leads', ->
+    @resource 'lead', path: '/:id'
 
