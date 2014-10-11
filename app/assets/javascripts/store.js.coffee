@@ -10,3 +10,6 @@ MyApp.Store = DS.Store.extend({
 MyApp.ApplicationAdapter = DS.ActiveModelAdapter.extend({
 
 })
+
+DS.RESTAdapter.reopen
+  namespace: '/api/v1'
