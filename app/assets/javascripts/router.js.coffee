@@ -5,5 +5,5 @@ MyApp.Router.reopen
   rootURL: '/'
 
 MyApp.Router.map ()->
-  # @resource('posts')
+  @resource 'leads', path: '/'
 
