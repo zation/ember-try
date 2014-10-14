@@ -23,6 +23,13 @@
 
     <p>
         <input type="submit" value="Save Changes" {{action "saveChanges"}}>
+        {{#if showUnsavedMessage}}
+            <div class="unsaved">unsaved changes</div>
+        {{/if}}
+
+        {{#if isSaving}}
+            <div class="saving">saving</div>
+        {{/if}}
     </p>
 
 </article>
