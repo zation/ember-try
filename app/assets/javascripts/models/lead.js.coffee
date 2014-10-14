@@ -9,3 +9,6 @@ MyApp.Lead = DS.Model.extend
   fullName: ( ->
     @get('firstName') + ' ' + @get('lastName')
   ).property('firstName', 'lastName')
+
+MyApp.Lead.reopenClass
+  STATUSES: ['new', 'in progress', 'closed', 'bad']
